@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Curso JavaScript</title>
     </head>
     <body>
@@ -78,6 +79,31 @@
             var sexoCase = retornaSexo("F");
             console.log(sexo);
             console.log(sexoCase);
+
+            //Operadores Lógicos
+
+            // and = &&, or = || e not = !
+
+            var sexo = 'M', idade = 23;
+
+            if(sexo === 'M' && idade >= 23){
+                console.log('OK');
+            }
+
+            
+            var Masculino;
+
+            if(sexo === 'M'){
+                Masculino = true;
+            }else{
+                Masculino = false;
+            }
+            console.log(Masculino);
+
+            //Jeito Simplificado
+
+            var Masculino = sexo === "F";
+            console.log(Masculino);
 
 
         </script>

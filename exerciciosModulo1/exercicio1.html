@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Exercicio 1</title>
+    </head>
+    <body>
+        <script>
+            //Exercicio 1
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            };
+            console.log("O usuario mora em " + endereco.cidade + " / " + endereco.uf + ", no bairro " + endereco.bairro + " na rua " + endereco.rua + " com o nº " + endereco.numero);
+            
+            //Exercicio 2
+            function pares(x, y) {
+                for(i = x; i <= y; i++){
+                    if(i % 2 ===0){
+                        console.log(i);
+                    }
+                }
+            }
+            pares(32, 321);
+
+            //Exercicio 3
+
+            var skills = ["Javascript", "ReactJS", "React Native"];
+            function temHabilidade(skills) {
+                var aux = skills.indexOf("Javascript");
+                if(aux > -1){
+                    return true;
+                }else{
+                    return false;
+                }
+            }            
+            console.log(temHabilidade(skills)); // true ou false
+
+            //Exercicio 4
+
+            function experiencia(anos) {
+                if (anos <= 1) {
+                    console.log("Iniciante");                    
+                }else if(anos > 1 && anos <=3){
+                    console.log("intermediário");
+                }else if(anos > 3 && anos <= 6){
+                    console.log("Avançado");
+                }else{
+                    console.log("Jerdi Master");
+                }
+            }
+            var anosEstudo = 7;
+            console.log(experiencia(anosEstudo));
+
+            //Exercicio 5
+
+            var usuarios = [
+                {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+                ];
+
+            function habilidades(user){
+                for (const iterator of user) {
+                    console.log("O " + iterator.nome + " possui as habilidades: " + iterator.habilidades);
+                }
+            }
+
+            habilidades(usuarios);
+        </script>
+    </body>
+</html>
